@@ -1,3 +1,57 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+  /* colors definition */
+  --main-color: black;
+  --secundary-color: #ffffff;
+  --terciary-color: #167BF7;
+  --legend-color: #c0c0c0;
+  --p-color: #f9f9f9;
+  /* font definition */
+  --main-font: "Inter", sans-serif;
+}
+
 body {
-  background-color: black;
+  background-color: var(--main-color);
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__img {
+  width: 5%;
+}
+
+.footer__info__anchors__anchor {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--secundary-color);
+  text-decoration: none;
+}
+
+.footer__info__p {
+  color: var(--p-color);
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 0.875rem;
 }
