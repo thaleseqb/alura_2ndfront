@@ -17,9 +17,6 @@
   margin: 0;
   padding: 0;
 }
-.header {
-  display: flex;
-}
 
 body {
   background-color: var(--main-color);
@@ -31,12 +28,12 @@ body {
   background-image: url("/Assests/Background.png");
   background-repeat: no-repeat;
   background-size: contain;
-  display: flex;
-  flex-direction: column;
 }
 
 .container {
   height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 .principal__h1 {
@@ -46,6 +43,29 @@ body {
 
 .principal__img {
   width: 21.75rem;
+}
+
+.principal__anchor {
+  text-decoration: none;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--secundary-color);
+  background-color: var(--terciary-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: block;
+}
+
+.snd__anchor {
+  background-color: transparent;
+  border: 0.0625rem solid var(--secundary-color);
+}
+
+.container__warning {
+  font-family: var(--main-font);
+  font-size: 0.75rem;
+  font-weight: 400;
 }
 
 .footer {
