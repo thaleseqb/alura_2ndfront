@@ -4,7 +4,7 @@
 
 :root {
   /* colors definition */
-  --main-color: black;
+  --main-color: #00030c;
   --secundary-color: #ffffff;
   --terciary-color: #167BF7;
   --legend-color: #c0c0c0;
@@ -13,14 +13,39 @@
   --main-font: "Inter", sans-serif;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: flex;
+}
+
 body {
   background-color: var(--main-color);
   box-sizing: border-box;
+  color: var(--secundary-color);
 }
 
-.header {
+.principal {
+  background-image: url("/Assests/Background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
   display: flex;
+  flex-direction: column;
+}
 
+.container {
+  height: 100vh;
+}
+
+.principal__h1 {
+  font-family: var(--main-font);
+  font-size: 1.75rem;
+}
+
+.principal__img {
+  width: 21.75rem;
 }
 
 .footer {
