@@ -83,6 +83,7 @@ body {
 
 .second {
   align-items: center;
+  margin: 0 6em;
 }
 
 .title__description {
@@ -101,27 +102,35 @@ body {
 
 .second__img {
   width: 80%;
-  margin: 0 10em;
-}
-
-.third {
-  align-items: center;
-  margin: 0 6em;
 }
 
 .trd__anchor {
-  width: 10.168rem;
+  display: inline-block;
   text-align: center;
 }
 
-.fourth {
-  align-items: center;
+.third {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.scnd__title__dscp {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.third__device__images {
+  flex-direction: row;
 }
 
 .footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   gap: 40px;
 }
 
