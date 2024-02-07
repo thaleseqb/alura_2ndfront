@@ -9,6 +9,7 @@
   --terciary-color: #167BF7;
   --legend-color: #c0c0c0;
   --p-color: #f9f9f9;
+  --hover_click: purple;
   /* font definition */
   --main-font: "Inter", sans-serif;
   --principal-size: 1rem
@@ -66,7 +67,6 @@ body {
   padding: 1rem;
   display: block;
   margin-bottom: 1em;
-  /* width: 32rem; */
 }
 
 .snd__anchor {
@@ -122,8 +122,15 @@ body {
   margin-bottom: 1em;
 }
 
-.third__device__images {
-  flex-direction: row;
+.complement {
+  font-size: 2rem;
+}
+
+.device__list {
+  display: flex;
+  justify-content: center;
+  margin: 5em 0;
+  list-style-type: none;
 }
 
 .footer {
@@ -131,26 +138,40 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 40px;
 }
 
-.footer__info {
+.footer__list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
+  list-style-type: none;
+}
+
+.links__list {
+  padding: 2.5rem 1rem 1.5rem 1rem;
 }
 
 .footer__img {
-  width: 5%;
+  width: 6.375rem;
 }
 
-.footer__info__anchors__anchor {
+.footer__info__anchor {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: var(--principal-size);
   color: var(--secundary-color);
   text-decoration: none;
+  
+}
+
+.footer__info__anchor:hover {
+  color: var(--terciary-color);
+}
+
+.trd__anchor:hover, .principal__anchor:hover {
+  background-color: var(--hover_click);
+}
+
+.footer__info__anchor:active {
+  color: var(--hover_click);
 }
 
 .footer__info__p {
@@ -158,4 +179,5 @@ body {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 0.875rem;
+  margin-bottom: 1.5rem;
 }
